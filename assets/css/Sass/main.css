@@ -1,0 +1,33 @@
+@import '../abstracts/variables';
+
+header img {
+  width: 60px;
+  background: url("/assets/images/post-image.jpg");
+}
+
+.jumbotron {
+  background-image: url("/assets/images/post-image.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 100px;
+  background-color: black;
+}
+
+h1 {
+  font-family: "PlayFair";
+  font-size: 70px;
+  font-weight: 700;
+  padding-top: 100px;
+}
+
+nav {
+  background: #121619;
+}
+nav .bg_dark {
+  color: #121619;
+}
+nav li a {
+  color: white;
+}
+
+/*# sourceMappingURL=main.css.map */

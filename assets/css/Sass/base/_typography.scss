@@ -1,0 +1,257 @@
+@import '../abstracts/variables';
+
+header img {
+    width: 60px;
+}
+
+.jumbotron {
+    background-image: url('/assets/images/post-image.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 100px;
+    height: 100%;
+
+}
+
+.btn-sm {
+    margin-left: 20px;
+    color: $white;
+    background-color: $nickel;
+    border-radius: 25px;
+    padding: 8px 15px;
+    font-size: 12px;
+}
+
+
+.btn-md {
+    margin-left: 10px;
+    color: $white;
+    background-color: $nickel;
+    border-radius: 25px;
+    padding: 8px 15px;
+    font-size: 12px;
+}
+
+.btn-sm:hover {
+    color: $white;
+    background-color: $lightGray;
+}
+
+.btn-sm:focus {
+    border-color: $lightGray;
+}
+
+.btn-md:hover {
+    color: $white;
+    background-color: $lightGray;
+}
+
+.btn-sm:focus {
+    border-color: $lightGray;
+}
+
+h1 {
+    font: $PlayFCursivaG;
+    color: $white;
+    width: 600px;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+}
+
+main {
+    margin-top: 30px;
+}
+
+
+
+.borde {
+    color: black;
+    margin-top: 20px;
+    padding-top: 50px;
+    border-style: solid;
+    border-color: lightgray;
+    border-width: 1px;
+    padding-bottom: 30px;
+}
+
+@mixin img {
+    border-radius: 100%;
+    //float: left;
+    width: 250px;
+    vertical-align: middle;
+}
+
+@mixin p {
+    font: $PlayFCursivaP;
+    vertical-align: middle;
+}
+
+.pink {
+    .blog {
+        font-size: 14px;
+        font-style: $PlayFRegularNav;
+    }
+
+    .navbar {
+        font-size: 12px;
+        font-style: $PlayFRegularNav;
+    }
+
+    color: $ruddyPink;
+    line-height: 0.5rem;
+}
+
+.classDiv {
+    padding-top: 60px;
+    vertical-align: middle;
+    font: $PlayFCursivaP;
+}
+
+.classDiv {
+    .pink {
+        margin-bottom: 0px !important;
+    }
+}
+
+.naomi {
+    img {
+        @include img;
+    }
+
+    p {
+        @include p;
+    }
+}
+
+.pagination {
+    .page-link {
+        color: $eerieBlack;
+    }
+
+    .page-item:first-child .page-link {
+        border-top-left-radius: 25px;
+        border-bottom-left-radius: 25px;
+        padding-left: 50px;
+    }
+
+    .page-item:last-child .page-link {
+        border-top-right-radius: 25px;
+        border-bottom-right-radius: 25px;
+        padding-right: 50px;
+    }
+
+    .page-link:hover {
+        z-index: 2;
+        color: $white;
+        text-decoration: none;
+        background-color: $eerieBlack;
+        border-color: $nickel;
+    }
+}
+
+
+
+.bg-color {
+    background-color: lightgray;
+}
+
+.transformed {
+    margin-top: 200px;
+    align-content: space-between;
+    //transform: rotate(90deg);
+    background-color: transparent;
+    //color: $white;
+    width: 50px;
+}
+
+footer img {
+    width: 100px;
+}
+
+@media screen and (max-width: 550px) {
+    header img {
+        width: 40px;
+    }
+
+    .pagination {
+        .page-link {
+            color: $eerieBlack;
+        }
+
+        .page-item:first-child .page-link {
+            border-top-left-radius: 25px;
+            border-bottom-left-radius: 25px;
+            padding-left: 50px;
+        }
+
+        .page-item:last-child .page-link {
+            border-top-right-radius: 25px;
+            border-bottom-right-radius: 25px;
+            padding-right: 50px;
+        }
+
+        .page-link:hover {
+            z-index: 2;
+            color: $white;
+            text-decoration: none;
+            background-color: $eerieBlack;
+            border-color: $nickel;
+        }
+    }
+
+    .btn-sm:hover {
+        color: $white;
+        background-color: $lightGray;
+    }
+
+    .btn-md:hover {
+        color: $white;
+        background-color: $lightGray;
+    }
+
+    h1 {
+        font: $PlayFCursivaP;
+        color: $white;
+        margin: 0 auto;
+        width: 200px;
+        text-align: center;
+    }
+
+    .classDiv {
+        padding-top: 10px;
+        vertical-align: middle;
+        font: $PlayFCursivaP;
+        text-align: center;
+    }
+
+    @mixin p {
+        font: $PlayFCursivaP;
+    }
+
+    @mixin img {
+        border-radius: 100%;
+        //float: left;
+        width: 250px;
+        vertical-align: middle;
+    }
+
+    .naomi {
+        img {
+            @include img;
+        }
+
+        p {
+            @include p;
+        }
+    }
+
+    #naomi-text {
+        display: none;
+    }
+
+    main section div #texto {
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+}
